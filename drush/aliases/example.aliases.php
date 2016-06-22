@@ -13,6 +13,12 @@ $aliases['test'] = array(
   'remote-host' => 'test.project.org',
   'remote-user' => 'php',
 );
+$aliases['prod'] = array(
+  'root' => '/disk/path/to/docroot',
+  'uri' => 'http://www.project.org/',
+  'remote-host' => 'www.project.org',
+  'remote-user' => 'php',
+);
 
 // Add your local aliases.
 if (file_exists(dirname(__FILE__) . '/aliases.local.php')) {
