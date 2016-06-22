@@ -7,7 +7,7 @@ namespace Drupal\corps\Tests;
  *
  * @group corps
  */
-class CHMProfileIntegrityTest extends \Drupal\simpletest\WebTestBase {
+class CorpsProfileIntegrityTest extends \Drupal\simpletest\WebTestBase {
 
   protected $profile = 'corps';
   protected $strictConfigSchema = FALSE;

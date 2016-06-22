@@ -6,7 +6,7 @@
 
 use Drupal\contact\Entity\ContactForm;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\corps\Form\ChmCustomInstallForm;
+use Drupal\corps\Form\CorpsCustomInstallForm;
 
 /**
  * Implements hook_form_FORM_ID_alter() for install_configure_form().
@@ -34,7 +34,7 @@ function corps_install_tasks(&$install_state) {
 }
 
 /**
- * Install CHM modules.
+ * Install custom modules.
  * @see install_profile_modules()
  */
 function corps_install_profile_modules() {
@@ -58,7 +58,7 @@ function corps_install_profile_modules() {
 }
 
 /**
- * Batch operation for enabling CHM module.
+ * Batch operation for enabling custom modules.
  */
 function _corps_install_module_batch($module_name, &$context) {
   \Drupal::service('module_installer')->install(array($module_name), TRUE);
@@ -67,7 +67,7 @@ function _corps_install_module_batch($module_name, &$context) {
 }
 
 /**
- * Install Optional Configs after CHM modules are installed.
+ * Install Optional Configs after the custom modules are installed.
  */
 function _corps_install_modules_finished() {
   \Drupal::service('config.installer')->installOptionalConfig();

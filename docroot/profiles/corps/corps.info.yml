@@ -1,11 +1,11 @@
-name: CHM
+name: corps
 type: profile
-description: 'CHM Portal toolkit installation'
+description: 'Corps portal installation'
 version: 8.x
 hidden: TRUE
 core: 8.x
 distribution:
-  name: CHM Toolkit
+  name: corps
 dependencies:
   - node
   - history

@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains \Drupal\corps\Form\ChmCustomInstallForm
+ * Contains \Drupal\corps\Form\CorpsCustomInstallForm
  */
 
 namespace Drupal\corps\Form;
@@ -12,7 +12,7 @@ use Drupal\Core\Form\FormStateInterface;
 /**
  * Implements custom config form for MY_PROFILE
  */
-class ChmCustomInstallForm extends FormBase {
+class CorpsCustomInstallForm extends FormBase {
 
   public static function getModules() {
     return array(
