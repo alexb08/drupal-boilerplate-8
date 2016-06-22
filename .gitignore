@@ -1,4 +1,5 @@
 .idea
+conf/apache.conf
 docroot/modules/examples
 docroot/sites/default/files
 docroot/sites/default/settings.local.php
