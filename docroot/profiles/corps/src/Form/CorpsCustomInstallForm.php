@@ -60,7 +60,6 @@ class CorpsCustomInstallForm extends FormBase {
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $all = array(
       'google_analytics',
-      'country_taxonomy',
     );
     $modules = $form_state->getValue('features');
     $all += array_filter($modules['modules']);
